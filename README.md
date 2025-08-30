@@ -1,51 +1,93 @@
-# Portfólio de Projetos Azure - DIO
+# Portfólio de Projetos Azure - DIO 🚀  
 
-Este repositório centraliza uma série de projetos desenvolvidos durante o Bootcamp da DIO, demonstrando a aplicação prática dos serviços do Microsoft Azure para engenharia de dados, automação de processos e versionamento de código. Cada projeto destaca uma faceta diferente do ecossistema Azure, desde a orquestração de dados com o Azure Data Factory até o controle de versão com o Azure DevOps e a ciência de dados colaborativa com o Databricks.
+Este repositório consolida **projetos práticos desenvolvidos durante o Bootcamp da DIO**, com foco em **engenharia de dados, automação de processos, versionamento de código e boas práticas de governança em nuvem**.  
 
-## Projetos
+Através do uso do **Microsoft Azure**, os projetos abordam desde a **orquestração e integração de dados (Azure Data Factory)** até o **versionamento seguro em pipelines CI/CD (Azure DevOps)** e o **processamento distribuído para ciência de dados (Databricks)**.  
 
-### 1. Azure Data Factory para ETL e Gerenciamento de Custos
+O objetivo é **demonstrar na prática** como aplicar serviços de nuvem de forma **eficiente, escalável e sustentável**, respeitando aspectos de **custos, segurança, governança e boas práticas de engenharia de dados**.  
 
-[cite_start]Este projeto demonstra a criação e o gerenciamento de uma instância do Azure Data Factory para orquestrar fluxos de trabalho de dados[cite: 550]. [cite_start]O objetivo principal foi estabelecer uma abordagem eficiente para gerenciar os custos, garantindo ao mesmo tempo uma infraestrutura organizada e sustentável[cite: 547].
+---
 
-**Principais Funcionalidades:**
-* [cite_start]**Infraestrutura como Código (IaC):** Utilizou Templates ARM para automatizar a implantação dos recursos do Azure, garantindo consistência e agilidade[cite: 551].
-* [cite_start]**Gerenciamento de Custos:** Implementou alertas para monitorar o consumo, evitando desperdícios e alinhando a implantação de recursos com as necessidades do projeto[cite: 554].
-* [cite_start]**Gerenciamento Organizado de Recursos:** Empregou uma estratégia de nomenclatura padronizada para os grupos de recursos para aumentar a clareza e a organização[cite: 549].
-* [cite_start]**Dashboards Personalizados:** Criou dashboards personalizados para o monitoramento de métricas, o que auxilia na tomada de decisões[cite: 557].
+## 📂 Projetos
 
-### 2. Processo de Redundância de Arquivos com Microsoft Azure
+### 1. Azure Data Factory para ETL e Gerenciamento de Custos  
+Este projeto demonstra a criação e gerenciamento de uma instância do **Azure Data Factory** para **orquestrar fluxos de trabalho de dados** e **controlar custos** de forma estratégica.  
 
-[cite_start]Este projeto detalha a implementação de um robusto processo de redundância de arquivos utilizando um conjunto de serviços do Azure[cite: 217]. [cite_start]O foco foi criar uma infraestrutura segura e escalável para automatizar o fluxo de dados e a integração[cite: 223].
+**Principais Funcionalidades:**  
+- **Infraestrutura como Código (IaC):** Automação da implantação via Templates ARM, garantindo padronização e consistência.  
+- **Gerenciamento de Custos:** Configuração de alertas de consumo para evitar desperdícios.  
+- **Organização de Recursos:** Estratégia de nomenclatura padronizada para aumentar clareza e rastreabilidade.  
+- **Dashboards Personalizados:** Monitoramento em tempo real para apoiar a tomada de decisão.  
 
-**Principais Componentes:**
-* [cite_start]**Azure Data Factory:** Usado para automatizar e gerenciar o fluxo de trabalho de redundância de dados[cite: 219, 225].
-* [cite_start]**Linked Services:** Configurado para conectar ambientes on-premises ao Azure para transferência de dados[cite: 220, 227].
-* [cite_start]**Azure Blob Storage:** Empregado para armazenar arquivos convertidos em diferentes camadas (Raw/Bronze, Silver e Gold)[cite: 221, 233, 234, 235, 236].
-* [cite_start]**Azure SQL Database:** Utilizado para estruturar os dados antes de movê-los para o armazenamento de redundância[cite: 222].
+---
 
-[cite_start]O pipeline desenvolvido extrai dados de um SQL Server local, converte-os em arquivos `.xls` e os move para o Azure Data Lake, garantindo alta disponibilidade[cite: 230, 231, 232].
+### 2. Processo de Redundância de Arquivos com Microsoft Azure  
+Implementação de um processo de **redundância de dados seguro, escalável e automatizado**, utilizando serviços integrados do Azure.  
 
-### 3. Versionamento e Backups com GitHub e Azure DevOps
+**Principais Componentes:**  
+- **Azure Data Factory:** Automação do fluxo de redundância.  
+- **Linked Services:** Conexão de ambientes on-premises ao Azure.  
+- **Azure Blob Storage:** Estrutura em camadas (Raw/Bronze, Silver, Gold) para governança dos dados.  
+- **Azure SQL Database:** Organização e estruturação dos dados antes da redundância.  
 
-[cite_start]Este projeto demonstra a integração do GitHub e do Azure DevOps para o versionamento e backup eficazes de artefatos de desenvolvimento[cite: 339]. [cite_start]Essa abordagem garante um fluxo de trabalho estruturado, seguro e escalável[cite: 340].
+🔄 O pipeline desenvolvido extrai dados de um **SQL Server local**, converte-os em `.xls` e os move para o **Azure Data Lake**, garantindo **alta disponibilidade e resiliência**.  
 
-**Práticas Essenciais:**
-* [cite_start]**Configuração do Repositório Git:** Estabeleceu um ambiente controlado para documentar todas as versões de código e artefatos[cite: 342, 343].
-* [cite_start]**Backups Automatizados:** Criou pipelines de backup automatizados no Azure DevOps para eliminar processos manuais e garantir a recuperabilidade[cite: 345, 347].
-* [cite_start]**Melhores Práticas de Versionamento:** Adotou commits frequentes e detalhados, juntamente com tags e releases para marcar versões estáveis[cite: 349, 350].
-* [cite_start]**Integração CI/CD:** Implementou pipelines de CI/CD para automatizar testes, validação e implantação, tornando o fluxo de desenvolvimento mais ágil[cite: 352, 353].
+---
 
-### 4. Controle e Versionamento de Código em Notebooks do Azure Databricks
+### 3. Versionamento e Backups com GitHub e Azure DevOps  
+Projeto focado em **versionamento de código, automação de backups e práticas de CI/CD**.  
 
-[cite_start]Este projeto explora o uso do Azure Databricks para o versionamento e organização de notebooks em ambientes com uso intensivo de dados[cite: 425]. [cite_start]A integração com o Azure DevOps foi um aprendizado fundamental, destacando a importância de um histórico de versões para evitar a perda de dados e facilitar a colaboração em equipe[cite: 433, 434].
+**Práticas Essenciais:**  
+- **Configuração de Repositórios Git:** Controle centralizado e organizado de versões de código.  
+- **Backups Automatizados:** Pipelines no Azure DevOps eliminando processos manuais.  
+- **Versionamento Profissional:** Uso de commits frequentes, tags e releases para rastreabilidade.  
+- **Integração CI/CD:** Automação de testes, validação e implantação contínua.  
 
-**Destaques:**
-* [cite_start]**Processamento Distribuído:** Configurou um cluster Databricks para execução de tarefas em paralelo, melhorando a velocidade da análise[cite: 427, 428].
-* [cite_start]**Desenvolvimento Assistido por IA:** Aproveitou a IA integrada ao Databricks para gerar automaticamente código Python e Spark, acelerando o fluxo de trabalho[cite: 430, 431, 436].
-* [cite_start]**Notebooks Organizados:** Estruturou notebooks com filtros, sumarizações e visualizações interativas para melhorar a interpretação dos dados[cite: 432].
-* [cite_start]**Integração com Azure DevOps:** Utilizou o Azure DevOps para o controle de versão dos notebooks, garantindo um processo de desenvolvimento seguro e gerenciável[cite: 433, 440].
+---
 
-## Conclusão
+### 4. Controle e Versionamento de Código em Notebooks do Azure Databricks  
+Uso do **Azure Databricks** para **processamento distribuído de dados** e **versionamento de notebooks** em ambiente colaborativo.  
 
-Coletivamente, esses projetos ressaltam a importância do planejamento estratégico na infraestrutura em nuvem, desde a configuração inicial de recursos e gerenciamento de custos até a implementação de uma redundância de dados robusta e a adoção das melhores práticas para o controle de versão. A experiência prática com o Azure Data Factory, Azure DevOps e Azure Databricks forneceu insights valiosos sobre a construção de soluções de dados escaláveis, eficientes e seguras.
+**Destaques:**  
+- **Processamento Distribuído:** Clusters configurados para execução paralela.  
+- **Desenvolvimento Assistido por IA:** Geração de código automatizado em Python e Spark.  
+- **Organização de Notebooks:** Filtros, sumarizações e visualizações para análise eficiente.  
+- **Integração com Azure DevOps:** Controle de versão e colaboração em equipe.  
+
+---
+
+## 📊 Conclusão  
+
+Esses projetos demonstram a **integração estratégica entre engenharia de dados, governança e automação em nuvem**, trazendo benefícios como:  
+
+✔ **Eficiência Operacional:** pipelines automatizados e versionados.  
+✔ **Escalabilidade:** soluções que suportam grandes volumes de dados.  
+✔ **Segurança & Governança:** gestão de custos e rastreabilidade de recursos.  
+✔ **Colaboração:** ambientes integrados e controlados para times de dados.  
+
+Com experiência prática em **Azure Data Factory, Azure Blob Storage, Azure SQL Database, Azure DevOps e Databricks**, este portfólio evidencia como aplicar **boas práticas de engenharia de dados em ambientes corporativos**.  
+
+---
+
+## 🛠️ Tecnologias e Serviços Utilizados  
+
+- **Azure Data Factory**  
+- **Azure Blob Storage / Data Lake**  
+- **Azure SQL Database**  
+- **Azure DevOps (Repos, Pipelines, Backups, CI/CD)**  
+- **Azure Databricks**  
+- **GitHub (versionamento e integração)**  
+- **ARM Templates (Infraestrutura como Código)**  
+
+---
+
+## 📌 Próximos Passos  
+
+📍 Expandir os pipelines para integrações com **Power BI**.  
+📍 Implementar **monitoramento com Azure Monitor e Log Analytics**.  
+📍 Adicionar **Docker e Kubernetes** para orquestração de workloads de dados.  
+
+---
+
+👨‍💻 **Autor:** Cássio Campos  
+🔗 GitHub: [cassiodataengineer](https://github.com/cassiodataengineer)  
